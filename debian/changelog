@@ -1,0 +1,1785 @@
+kio (5.92.0-0ubuntu1) jammy; urgency=medium
+
+  [ José Manuel Santamaría Lema ]
+  * New upstream release (5.92.0)
+  * Update installed files
+
+  [ Rik Mills ]
+  * Update symbols from build logs.
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Wed, 16 Mar 2022 16:27:28 +0000
+
+kio (5.91.0a-0ubuntu1) jammy; urgency=medium
+
+  * New upstream release (5.91.0)
+  * Update installed files
+  * Update symbols
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Mon, 14 Feb 2022 18:54:38 +0000
+
+kio (5.90.0a-0ubuntu1) jammy; urgency=medium
+
+  * New upstream release (5.90.0)
+  * Refresh patches.
+  * Update symbols.
+
+ -- Rik Mills <rikmills@kde.org>  Thu, 06 Jan 2022 16:47:36 +0000
+
+kio (5.89.0a-0ubuntu1) jammy; urgency=medium
+
+  [ José Manuel Santamaría Lema ]
+  * New upstream release (5.89.0)
+  * Remove upstream-aef544eb-
+    Fix_copying_between_different_filesystems_on_Linux, applied upstream
+  * Update symbols
+
+  [ Rik Mills ]
+  * Rename tarball after upstream respin.
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Sun, 12 Dec 2021 15:16:33 +0000
+
+kio (5.88.0-1ubuntu1) jammy; urgency=medium
+
+  * Merge from Debian unstable. Remaining changes:
+    - Kubuntu Vcs fields.
+    - Keep our symbols files.
+    - Update lintian overrides.
+
+ -- Rik Mills <rikmills@kde.org>  Sun, 28 Nov 2021 11:24:40 +0000
+
+kio (5.88.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.87.0).
+  * Update patch, drop fix_kfreebsd_build.
+  * New upstream release (5.88.0).
+  * Update patches.
+  * Force-bump frameworks internal b-d to 5.88.
+  * Cherry-pick upstream aef544eb for copying files between filesystems.
+
+ -- Norbert Preining <norbert@preining.info>  Thu, 18 Nov 2021 08:14:32 +0900
+
+kio (5.88.0-0ubuntu1) jammy; urgency=medium
+
+  * New upstream release (5.88.0)
+  * Update patches.
+  * Update lintian.
+
+ -- Rik Mills <rikmills@kde.org>  Sat, 13 Nov 2021 18:19:05 +0000
+
+kio (5.87.0-0ubuntu1) jammy; urgency=medium
+
+  * New upstream release (5.87.0)
+  * Refresh fix_kfreebsd_build
+  * Refresh fix_hurd_build.patch
+  * Remove upstream_fix-permissions-when-copying-files.patch
+  * Remove upstream_fix-showing-labels-for-read-only-files.patch
+  * Update symbols
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Thu, 11 Nov 2021 11:06:07 +0000
+
+kio (5.86.0a-0ubuntu3) impish; urgency=medium
+
+  * Add another upstream bugfix patch:
+    - d/p/upstream_fix-showing-labels-for-read-only-files.patch
+      https://bugs.kde.org/442237
+
+ -- Rik Mills <rikmills@kde.org>  Fri, 24 Sep 2021 14:26:42 +0100
+
+kio (5.86.0a-0ubuntu2) impish; urgency=medium
+
+  * Add upstream bugfix patch:
+    - d/p/upstream_fix-permissions-when-copying-files.patch
+      https://bugs.kde.org/show_bug.cgi?id=404777
+
+ -- Rik Mills <rikmills@kde.org>  Mon, 20 Sep 2021 12:24:52 +0100
+
+kio (5.86.0a-0ubuntu1) impish; urgency=medium
+
+  * New upstream release (5.86.0)
+  * Refresh patches so the apply without any offset
+  * Update symbols
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Mon, 13 Sep 2021 12:48:19 +0100
+
+kio (5.86.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.86.0).
+  * Bump Standards-Version to 4.6.0, no change required.
+  * Update patches.
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 13 Sep 2021 12:44:27 +0900
+
+kio (5.85.0-3) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * Only use B-D libmount-dev on linux systems (Closes: #993682)
+    Thanks to Samuel Thibault.
+
+ -- Norbert Preining <norbert@preining.info>  Sun, 05 Sep 2021 17:16:31 +0900
+
+kio (5.85.0-2) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Norbert Preining <norbert@preining.info>  Sat, 28 Aug 2021 23:42:47 +0900
+
+kio (5.85.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.85.0).
+  * New build deps kded5-dev and libmount-dev.
+  * Update install files.
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 08:14:56 +0900
+
+kio (5.85.0-0ubuntu1) impish; urgency=medium
+
+  * New upstream release (5.85.0)
+  * New build deps kded5-dev and libmount-dev
+  * Update install files.
+  * Update symbols.
+
+ -- Rik Mills <rikmills@kde.org>  Fri, 13 Aug 2021 11:27:30 +0100
+
+kio (5.84.0-0ubuntu1) impish; urgency=medium
+
+  * New upstream release (5.84.0)
+  * Update symbols
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Sun, 11 Jul 2021 09:00:33 +0100
+
+kio (5.83.0-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 11:53:05 +0900
+
+kio (5.83.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.83.0).
+  * Update symbols.
+  * Drop upstream patches.
+
+ -- Norbert Preining <norbert@preining.info>  Sun, 13 Jun 2021 13:59:04 +0900
+
+kio (5.83.0-0ubuntu1) impish; urgency=medium
+
+  * New upstream release (5.83.0)
+  * Update symbols from build logs.
+
+ -- Rik Mills <rikmills@kde.org>  Sat, 12 Jun 2021 12:17:30 +0100
+
+kio (5.82.0a-0ubuntu1) impish; urgency=medium
+
+  * New upstream release (5.82.0)
+  * Update symbols
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Sat, 08 May 2021 11:57:12 +0100
+
+kio (5.82.0-3) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * Cherry-pick another fix according to upstream.
+
+ -- Norbert Preining <norbert@preining.info>  Sun, 16 May 2021 20:54:16 +0900
+
+kio (5.82.0-2) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * Backport regression-fixes from upstream.
+
+ -- Norbert Preining <norbert@preining.info>  Sat, 15 May 2021 06:56:08 +0900
+
+kio (5.82.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.82.0).
+  * Removed Maximiliano Curia from the uploaders, thanks for your work
+    on the package!
+  * Update patches.
+  * Update symbols (one dropped symbols is a leaked private one).
+
+ -- Norbert Preining <norbert@preining.info>  Sun, 09 May 2021 09:52:47 +0900
+
+kio (5.81.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream version (5.81.0)
+  * Bump inter-frameworks dependencies.
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 12 Apr 2021 10:18:18 +0900
+
+kio (5.81.0-0ubuntu1) impish; urgency=medium
+
+  * New upstream release (5.81.0)
+  * Drop included upstream_fix-kde-bug-434455.patch
+
+ -- Rik Mills <rikmills@kde.org>  Wed, 28 Apr 2021 10:29:40 +0100
+
+kio (5.80.1-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.80.1).
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 16 Mar 2021 10:56:35 +0900
+
+kio (5.80.1-0ubuntu3) hirsute; urgency=medium
+
+  * Build qch help docs once more now that doxygen works again on
+    riscv64.
+  * Add upstream requested patch to fix bug on unmounting volumes.
+    https://bugs.kde.org/show_bug.cgi?id=434455
+    - debian/patches: upstream_fix-kde-bug-434455.patch
+
+ -- Rik Mills <rikmills@kde.org>  Tue, 23 Mar 2021 14:20:21 +0000
+
+kio (5.80.1-0ubuntu2) hirsute; urgency=medium
+
+  * Build without docs
+
+ -- Rik Mills <rikmills@kde.org>  Fri, 19 Mar 2021 12:08:03 +0000
+
+kio (5.80.1-0ubuntu1) hirsute; urgency=medium
+
+  * New upstream bugfix release (5.80.1)
+
+ -- Rik Mills <rikmills@kde.org>  Fri, 19 Mar 2021 08:55:32 +0000
+
+kio (5.80.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream version (5.80.0)
+  * Update patches.
+  * Update list of installed files.
+  * Bump inter-frameworks dependencies.
+  * Update symbols.
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 15 Mar 2021 15:10:34 +0900
+
+kio (5.80.0-0ubuntu1) hirsute; urgency=medium
+
+  * New upstream release (5.80.0)
+  * Refresh patches:
+    - report_error_removing_dirs
+    - fix_kfreebsd_build
+    - fix_hurd_build.patch
+  * Update installed files
+  * Update symbols
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Thu, 18 Mar 2021 11:08:10 +0000
+
+kio (5.79.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.79.0).
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 16 Feb 2021 06:45:28 +0900
+
+kio (5.79.0-0ubuntu1) hirsute; urgency=medium
+
+  [ Rik Mills ]
+  * New upstream release (5.79.0)
+  * Drop included upstream-a183dd0d1ee0-copyjob-fix-crash-skip-
+    retry.patch
+
+  [ José Manuel Santamaría Lema ]
+  * Update symbols
+
+ -- Rik Mills <rikmills@kde.org>  Sat, 13 Feb 2021 12:22:12 +0000
+
+kio (5.78.0-5) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * Cherry-pick upstream fix for kio caching/displaying websites etc
+    instead of forwarding to the browser.
+
+ -- Norbert Preining <norbert@preining.info>  Thu, 15 Jul 2021 10:20:01 +0900
+
+kio (5.78.0-4) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Aurélien COUDERC ]
+  * Cherry-pick upstream fix:
+    - Fix lockup when renaming a file from properties dialog
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Mon, 08 Feb 2021 10:12:11 +0100
+
+kio (5.78.0-3ubuntu1) hirsute; urgency=medium
+
+  * Merge from debian unstable. Remaining changes:
+    - Kubuntu Vcs fields.
+    - Keep Kubuntu symbols files.
+
+ -- Rik Mills <rikmills@kde.org>  Wed, 03 Feb 2021 10:57:42 +0000
+
+kio (5.78.0-3) unstable; urgency=medium
+
+  * Remove graphviz from build depends.
+  * Cherry-pick upstream fix for crash in KIO's SkipDialog
+
+ -- Norbert Preining <norbert@preining.info>  Wed, 03 Feb 2021 19:09:03 +0900
+
+kio (5.78.0-2ubuntu1) hirsute; urgency=medium
+
+  * Merge from debian unstable. Remaining changes:
+    - Kubuntu Vcs fields.
+    - Keep Kubuntu symbols files.
+
+ -- Rik Mills <rikmills@kde.org>  Sun, 31 Jan 2021 10:38:44 +0000
+
+kio (5.78.0-2) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Norbert Preining <norbert@preining.info>  Sun, 17 Jan 2021 12:02:22 +0900
+
+kio (5.78.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.78.0).
+  * Update build-deps and deps with the info from cmake.
+  * Drop upstream included patch.
+  * Update symbols.
+
+ -- Norbert Preining <norbert@preining.info>  Wed, 13 Jan 2021 10:32:42 +0900
+
+kio (5.78.0-0ubuntu1) hirsute; urgency=medium
+
+  * New upstream release (5.78.0)
+  * Drop upstream-9dc9e26b9196-add-missing-nullptr-init.patch, included
+    in this release.
+  * Update symbols from build logs.
+
+ -- Rik Mills <rikmills@kde.org>  Sat, 09 Jan 2021 09:56:42 +0000
+
+kio (5.77.0-3ubuntu1) hirsute; urgency=medium
+
+  * Merge from debian unstable. Remaining changes:
+    - Kubuntu Vcs fields.
+    - Keep Kubuntu symbols files.
+
+ -- Rik Mills <rikmills@kde.org>  Mon, 04 Jan 2021 22:54:41 +0000
+
+kio (5.77.0-3) unstable; urgency=medium
+
+  * cherry-pick upstream fix add missing nullptr init
+    (d/patches/upstream-9dc9e26b9196-add-missing-nullptr-init.patch)
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 28 Dec 2020 09:39:21 +0900
+
+kio (5.77.0-2) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 22 Dec 2020 10:33:35 +0900
+
+kio (5.77.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.77.0).
+  * Update build-deps and deps with the info from cmake.
+  * Update symbols.
+  * Update patches, disable Use-CXX_FLAGS-for-moc_predefs.h.patch.
+
+ -- Norbert Preining <norbert@preining.info>  Fri, 18 Dec 2020 10:03:54 +0900
+
+kio (5.77.0-0ubuntu1) hirsute; urgency=medium
+
+  * New upstream release (5.77.0)
+  * Refresh patch report_error_removing_dirs
+  * Refresh patch fix_kfreebsd_build
+  * Refresh patch fix_hurd_build.patch
+  * Update patch Use-CXX_FLAGS-for-moc_predefs.h.patch
+  * Update symbols files
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Sun, 13 Dec 2020 20:10:35 +0000
+
+kio (5.76.0-0ubuntu1) hirsute; urgency=medium
+
+  * New upstream release (5.75.0)
+  * Update symbols
+  * New upstream release (5.76.0)
+  * Update symbols
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Sat, 14 Nov 2020 13:23:05 +0000
+
+kio (5.74.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release:
+    - fixes issue in kdeconnect (Closes: #975969)
+  * Update renamed lintian tag names in lintian overrides.
+  * Drop the transitional kio-dev package, no more needed now.
+    (Closes: #939247)
+  * Drop files of the unused 'acc' autopkgtest.
+
+  [ Norbert Preining ]
+  * Bump Standards-Version to 4.5.1 (No changes needed).
+  * Add myself to Uploaders.
+  * Update maintainer to Debian Qt/KDE Maintainers
+    <debian-qt-kde@lists.debian.org>.
+
+ -- Pino Toscano <pino@debian.org>  Wed, 16 Dec 2020 14:23:09 +0100
+
+kio (5.74.1-0ubuntu1) groovy; urgency=medium
+
+  * New upstream release (5.74.1)
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Mon, 14 Sep 2020 21:43:48 +0100
+
+kio (5.74.0a-0ubuntu1) groovy; urgency=medium
+
+  * New upstream release (5.74.0)
+  * Update symbols
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Sun, 13 Sep 2020 10:59:31 +0100
+
+kio (5.74.0-2) unstable; urgency=medium
+
+  * Team upload to unstable.
+
+ -- Sandro Knauß <hefee@debian.org>  Mon, 19 Oct 2020 23:18:06 +0200
+
+kio (5.74.0-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * kded is an explicit runtime dependency of kio as it calls
+    org.kde.kded5 via dbus.
+  * New upstream release (5.74.0).
+  * Update build-deps and deps with the info from cmake.
+  * Add renamecategories file to libkf5kiocore5.install.
+  * Update symbols from build for 5.74.0.
+  * Update Homepage link to point to new invent.kde.org
+  * Update field Source in debian/copyright to invent.kde.org move.
+  * Update repository related entries to metadata file.
+  * Update symbols from build for 5.74.0 no ABI bump needed (only
+    private symbols got removed).
+  * Add Bug-* entries to metadata file.
+
+ -- Sandro Knauß <hefee@debian.org>  Sun, 27 Sep 2020 17:46:14 +0200
+
+kio (5.73.0-0ubuntu1) groovy; urgency=medium
+
+  * New upstream release (5.73.0)
+  * Update symbols.
+  * Update install files.
+
+ -- Rik Mills <rikmills@kde.org>  Sat, 08 Aug 2020 10:58:29 +0100
+
+kio (5.72.0-0ubuntu1) groovy; urgency=medium
+
+  * New upstream release (5.72.0)
+
+ -- Rik Mills <rikmills@kde.org>  Mon, 06 Jul 2020 20:33:07 +0100
+
+kio (5.71.0-0ubuntu1) groovy; urgency=medium
+
+  * New upstream release (5.71.0)
+  * Update symbols from build logs.
+  * Add runtime depend on kded5, as indicated from cmake output.
+
+ -- Rik Mills <rikmills@kde.org>  Sun, 14 Jun 2020 12:06:44 +0100
+
+kio (5.70.1-1ubuntu1) groovy; urgency=medium
+
+  * Merge from debian unstable. Remaining changes:
+    - Kubuntu Vcs fields.
+    - debhelper-compat = 12 for backports.
+    - No kio-dev transitional package.
+    - Keep our symbols files.
+    - kio.maintscript
+
+ -- Rik Mills <rikmills@kde.org>  Fri, 05 Jun 2020 13:11:29 +0100
+
+kio (5.70.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Bump compat level to 13.
+  * New upstream release (5.70.1).
+  * Update build-deps and deps with the info from cmake.
+  * Wrap long lines in changelog entries: 5.22.0-1.
+  * Set field Upstream-Contact in debian/copyright.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update patch hunks.
+  * Update symbols from buildds for 5.70.0.
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 26 May 2020 23:57:50 +0200
+
+kio (5.70.1-0ubuntu1) groovy; urgency=medium
+
+  * New upstream bugfix release (5.70.1)
+
+ -- Rik Mills <rikmills@kde.org>  Sun, 17 May 2020 14:51:52 +0100
+
+kio (5.70.0-0ubuntu1) groovy; urgency=medium
+
+  [ José Manuel Santamaría Lema ]
+  * New upstream release (5.69.0)
+  * Update symbols files
+
+  [ Rik Mills ]
+  * New upstream release (5.70.0)
+  * Update symbols from build logs.
+
+ -- Rik Mills <rikmills@kde.org>  Sat, 09 May 2020 12:32:22 +0100
+
+kio (5.69.0-2) experimental; urgency=medium
+
+  * Team upload.
+  * Update symbols files from the logs of buildds.
+
+ -- Pino Toscano <pino@debian.org>  Fri, 01 May 2020 10:34:45 +0200
+
+kio (5.69.0-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Bump compat level to 12.
+  * Bump Standards-Version to 4.5.0 (No changes needed).
+  * Add Rules-Requires-Root field to control.
+  * New upstream release (5.69.0).
+  * Update build-deps and deps with the info from cmake.
+  * Enable hardening all.
+  * Update patch hunks.
+  * Update symbols from build for 5.69.0.
+  * Add symbols file for libkf5kiogui5.
+  * Add qtdeclerative-dev to BD.
+  * Delete not needed Breaks/Confilcts.
+  * Cleanup copyright file.
+  * Cleanup Build-Depends.
+  * Remove duplicate priority entry for kio-dev.
+  * Remove not needed injection of linker flags.
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 30 Apr 2020 17:56:45 +0200
+
+kio (5.68.0-0ubuntu1) focal; urgency=medium
+
+  * New upstream release (5.68.0)
+
+ -- Rik Mills <rikmills@kde.org>  Wed, 25 Mar 2020 20:57:53 +0000
+
+kio (5.67.0-0ubuntu2) focal; urgency=medium
+
+  * Refresh existing patches.
+  * Add upstream patch requested by KDE devs.
+    https://bugs.kde.org/418258
+    - debian/patches: upstream_fix-opening-ssh-protocol.patch
+
+ -- Rik Mills <rikmills@kde.org>  Sat, 21 Mar 2020 08:50:41 +0000
+
+kio (5.67.0-0ubuntu1) focal; urgency=medium
+
+  * New upstream release (5.67.0)
+  * Update symbols from build logs.
+
+ -- Rik Mills <rikmills@kde.org>  Sat, 08 Feb 2020 09:50:39 +0000
+
+kio (5.66.0-0ubuntu1) focal; urgency=medium
+
+  * New upstream release (5.66.0)
+  * Update symbols from build logs.
+
+ -- Rik Mills <rikmills@kde.org>  Sat, 11 Jan 2020 13:19:32 +0000
+
+kio (5.65.0b-0ubuntu1) focal; urgency=medium
+
+  * New upstream release (5.65.0)
+  * Update symbols files
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Sat, 14 Dec 2019 23:00:44 +0000
+
+kio (5.64.0-0ubuntu1) focal; urgency=medium
+
+  * Follow Debian disabling tests.
+  * New build depend on qtdeclarative5-dev for Qt5Qml.
+  * New upstream release (5.63.0)
+  * Update symbols from build logs.
+  * New upstream release (5.64.0)
+
+ -- Rik Mills <rikmills@kde.org>  Sat, 09 Nov 2019 21:24:51 +0000
+
+kio (5.62.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Bump Standards-Version to 4.4.1, no changes required.
+  * Drop the migration from kio-dbg, no more needed after two Debian stable
+    releases.
+  * Pass -DBUILD_TESTING=OFF to cmake to disable the build of tests, as they
+    are not run at build time anyway.
+  * Drop the disabled 'testsuite' autopkgtest, as it does not test the installed
+    packages anyway
+    - drop patches wait_for_a_bit_longer, Disable-flaky-test.patch,
+      Disable-baloo-dependant-tests.patch, and Disable-flaky-test-1.patch,
+      no more needed now
+  * Add Build-Depends-Package to the symbols files.
+  * Install the designer plugin into libkf5kio-dev
+    - use the ${shlibs:Depends} substvar
+  * Explicitly add the gettext build dependency.
+  * Rework the dependencies of libkf5kio-dev:
+    - use the sodep dh addon to generate the list shared libraries to depend
+      on, and use the ${so:Depends} substvar
+    - remove kio, as nothing in -dev requires the runtime binaries
+  * Remove debian/not-installed file, no more needed now.
+  * Backport upstream commit 2c379fecccbf5e2c0b20a93c843c009f2f597318 to fix
+    a crash in kio_file on exit; patch
+    upstream_Fix-crash-on-exit-in-kio_file.patch. (Closes: #941600)
+  * Remove the empty line at the end of changelog.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 12 Oct 2019 18:06:44 +0200
+
+kio (5.62.1-1) unstable; urgency=medium
+
+  * Update reprotest args variable
+  * New upstream release (5.62.0).
+  * Update build-deps and deps with the info from cmake
+  * Update install files
+  * Disable autopkgtest testsuite
+  * Update symbols file
+  * New upstream release (5.62.1).
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 20 Sep 2019 10:13:05 -0700
+
+kio (5.62.1-0ubuntu2) focal; urgency=medium
+
+  * Sync Debian test changes:
+    - Pass -DBUILD_TESTING=OFF to cmake to disable the build of tests, as they
+      are not run at build time anyway.
+    - Drop the disabled 'testsuite' autopkgtest, as it does not test the installed
+      packages anyway
+      + drop patches wait_for_a_bit_longer, no more needed now
+  * Drop kubuntu_disable_failing_tests.diff
+
+ -- Rik Mills <rikmills@kde.org>  Wed, 30 Oct 2019 15:20:31 +0000
+
+kio (5.62.1-0ubuntu1) eoan; urgency=medium
+
+  * New upstream release (5.62.1)
+
+ -- Rik Mills <rikmills@kubuntu.org>  Mon, 16 Sep 2019 21:46:00 +0100
+
+kio (5.62.0-0ubuntu1) eoan; urgency=medium
+
+  * New build dep on qttools5-dev for Qt5UiPlugin
+  * Update install files.
+  * Install designer plugin in -dev package.
+  * New upstream release (5.62.0)
+  * Update symbols from build logs.
+
+ -- Rik Mills <rikmills@kubuntu.org>  Sat, 14 Sep 2019 08:07:15 +0100
+
+kio (5.61.0-1) experimental; urgency=medium
+
+  [ Scarlett Moore ]
+  * Build-Depend on qttools5-dev to fix a cross build failure
+    (see #915122 for more info) (Closes: 930435)
+
+  [ Maximiliano Curia ]
+  * Salsa CI automatic initialization by Tuco
+  * Use CXX_FLAGS for moc_predefs.h
+  * New upstream release (5.61.0).
+  * Update build-deps and deps with the info from cmake
+  * Add missing version to maintscript
+  * Refresh patches
+  * Update symbols file
+  * Ignore reprotest build path variations
+  * Release to experimental
+
+  [ Jonathan Riddell ]
+  * moved qdebug files
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 09 Sep 2019 21:10:39 +0100
+
+kio (5.61.0-0ubuntu1) eoan; urgency=medium
+
+  * New upstream release (5.61.0)
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Mon, 12 Aug 2019 10:42:44 +0100
+
+kio (5.60.0-0ubuntu1) eoan; urgency=medium
+
+  * Move qdebug categories file to new location.
+  * New upstream release (5.60.0)
+  * Refresh patches.
+  * Update symbols from build logs.
+
+ -- Rik Mills <rikmills@kubuntu.org>  Sat, 20 Jul 2019 08:16:27 +0100
+
+kio (5.59.0-0ubuntu1) eoan; urgency=medium
+
+  * New upstream release (5.59.0)
+  * Update symbols from build logs.
+
+ -- Rik Mills <rikmills@kubuntu.org>  Wed, 12 Jun 2019 11:19:37 +0100
+
+kio (5.58.0-0ubuntu1) eoan; urgency=medium
+
+  * New upstream release (5.58.0)
+
+ -- Rik Mills <rikmills@kubuntu.org>  Mon, 13 May 2019 15:40:37 +0100
+
+kio (5.57.0-0ubuntu1) eoan; urgency=medium
+
+  * New upstream release (5.57.0)
+  * Update symbols from build logs.
+
+ -- Rik Mills <rikmills@kubuntu.org>  Mon, 22 Apr 2019 08:38:15 +0100
+
+kio (5.56.0-0ubuntu1) disco; urgency=medium
+
+  * New upstream release (5.56.0)
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Sat, 09 Mar 2019 16:36:15 +0000
+
+kio (5.55.0-0ubuntu1) disco; urgency=medium
+
+  * New upstream release (5.55.0)
+  * Update symbols from build logs.
+
+ -- Rik Mills <rikmills@kubuntu.org>  Wed, 13 Feb 2019 08:31:32 +0000
+
+kio (5.54.1-1) unstable; urgency=medium
+
+  * New upstream release (5.52.0).
+  * Update build-deps and deps with the info from cmake
+  * Rediff patches
+  * fix favicontest: use a non existing url
+  * Disable acc autopkgtest
+  * New upstream release (5.53.0).
+  * Update build-deps and deps with the info from cmake
+  * Update symbols files.
+  * New upstream release (5.54.0).
+  * Update build-deps and deps with the info from cmake
+  * Rediff patches
+  * Update symbols file
+  * Bump group breaks (5.54)
+  * New upstream release (5.54.1).
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 17 Jan 2019 20:29:50 -0300
+
+kio (5.54.1-0ubuntu1) disco; urgency=medium
+
+  * New upstream hotfix release (5.54.1)
+
+ -- Rik Mills <rikmills@kubuntu.org>  Mon, 14 Jan 2019 14:45:51 +0000
+
+kio (5.54.0a-0ubuntu1) disco; urgency=medium
+
+  * Update symbols.
+  * New upstream release (5.54.0)
+  * Rename tarball to 5.54.0a after respin.
+
+ -- Rik Mills <rikmills@kubuntu.org>  Sun, 13 Jan 2019 12:35:13 +0000
+
+kio (5.53.0-0ubuntu1) disco; urgency=medium
+
+  [ José Manuel Santamaría Lema ]
+  * New upstream release (5.53.0)
+
+  [ Rik Mills ]
+  * Update symbols from build logs.
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Sun, 09 Dec 2018 20:48:53 +0000
+
+kio (5.52.0-0ubuntu1) disco; urgency=medium
+
+  [ Rik Mills ]
+  * Refresh patches.
+
+  [ José Manuel Santamaría Lema ]
+  * New upstream release (5.52.0)
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Thu, 22 Nov 2018 14:42:22 +0000
+
+kio (5.51.0-1) unstable; urgency=medium
+
+  * New upstream release (5.50.0).
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (5.50)
+  * New upstream release (5.51.0).
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (5.51)
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 07 Nov 2018 17:16:59 +0100
+
+kio (5.51.0-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New build dep on libkf5crash-dev.
+  * New upstream release (5.51.0)
+
+ -- Rik Mills <rikmills@kubuntu.org>  Thu, 11 Oct 2018 08:09:01 +0000
+
+kio (5.50.0-0ubuntu2) cosmic; urgency=medium
+
+  * Disable flaky tests. Occurs upstream and on Ubuntu test infra.
+
+ -- Rik Mills <rikmills@kubuntu.org>  Fri, 14 Sep 2018 23:48:11 +0100
+
+kio (5.50.0-0ubuntu1) cosmic; urgency=medium
+
+  * Drop applied upstream_fix_kfileplacesview_test.diff
+  * New upstream release (5.50.0)
+
+ -- Rik Mills <rikmills@kubuntu.org>  Mon, 10 Sep 2018 22:13:42 +0100
+
+kio (5.49.0-1) unstable; urgency=medium
+
+  * New upstream release (5.48.0).
+  * Update build-deps and deps with the info from cmake
+  * New upstream release (5.49.0).
+  * Update build-deps and deps with the info from cmake
+  * Update symbols files.
+  * Update install files
+  * Rediff patches
+  * Disable flaky test
+  * Bump group breaks (5.49)
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 17 Aug 2018 16:18:40 +0200
+
+kio (5.49.0-0ubuntu3) cosmic; urgency=medium
+
+  * ACC test: add statx to skip_types, fixes the ACC test with glibc >=
+    2.28
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Mon, 27 Aug 2018 00:44:12 +0100
+
+kio (5.49.0-0ubuntu2) cosmic; urgency=medium
+
+  * Refresh all patches so they apply without any offset
+  * Add upstream_fix_kfileplacesview_test.diff
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Sat, 25 Aug 2018 15:28:05 +0100
+
+kio (5.49.0-0ubuntu1) cosmic; urgency=medium
+
+  [ Rik Mills ]
+  * New upstream release (5.48.0)
+  * Update symbols from build logs
+  * New upstream release (5.49.0)
+  * Install debug categories file
+
+  [ José Manuel Santamaría Lema ]
+  * Fix symbols files for GCC 8
+  * Move away from dhmk and set compat level to 11 in order to reduce
+    delta with Debian
+
+ -- Rik Mills <rikmills@kubuntu.org>  Tue, 21 Aug 2018 20:30:24 +0100
+
+kio (5.47.0a-0ubuntu1) cosmic; urgency=medium
+
+  * New upstream release (5.47.0)
+  * Update symbols from build logs
+  * Merge with debian, notes:
+    - keep using dhmk and debhelper compat level = 9, see:
+      https://phabricator.kde.org/w/kubuntu/black-operations/pyramid/
+  * Refresh patches
+  * Update kubuntu_disable_failing_tests.diff:
+    - Stop disabling KFilePlacesModelTest. Fixed upstream.
+    - Disable KMountPointTest. To investigate.
+  * Drop transitional kio-dev package
+
+ -- Rik Mills <rikmills@kubuntu.org>  Thu, 14 Jun 2018 15:49:24 +0100
+
+kio (5.47.0-1) unstable; urgency=medium
+
+  * New upstream release (5.47.0).
+  * Update build-deps and deps with the info from cmake
+  * Drop upstream applied/adapted patches
+  * Update symbols files.
+  * Bump group breaks (5.47)
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 15 Jun 2018 12:09:37 +0200
+
+kio (5.46.0-1) unstable; urgency=medium
+
+  * New upstream release (5.46.0).
+  * Update build-deps and deps with the info from cmake
+  * Bump Standards-Version to 4.1.4.
+  * Refresh patches
+  * testsuite: Run tests one at the time
+  * Add patches for KFilePlacesModelTest
+  * Bump group breaks (5.46)
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 17 May 2018 22:15:09 +0200
+
+kio (5.46.0-0ubuntu1) cosmic; urgency=medium
+
+  [ Rik Mills ]
+  * Update install for upstream 'Temporarily disable installation of
+    file ioslave's kauth helper and policy file', but commented out
+    only, so ready to revert.
+  * Update symbols from build logs
+  * New upstream release (5.45.0)
+  * New upstream release (5.46.0)
+  * Install kconf_update file for filepicker preview changes
+
+  [ José Manuel Santamaría Lema ]
+  * Add udisks2 to testsuite Depends, it removes some warnings from
+    stdout making things easier to understand when something goes wrong.
+
+ -- Rik Mills <rikmills@kubuntu.org>  Tue, 15 May 2018 15:56:35 +0100
+
+kio (5.45.0-1) unstable; urgency=medium
+
+  * New upstream release (5.45.0).
+  * Update build-deps and deps with the info from cmake
+  * Drop upstream patches
+  * Refresh patches
+  * Update symbols files
+  * Bump group breaks (5.45)
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 05 May 2018 08:10:36 +0200
+
+kio (5.44.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Backport upstream commit 52307a81b15278c27317d5f4d773485e8577ecd2 to
+    initialize properly the sockaddr_un struct (mostly for non-Linux
+    architectures); patch
+    upstream_file-do-not-assume-layout-of-sockaddr_un-struct.patch.
+  * Remove trailing whitespaces in changelog.
+  * Use https for Format in copyright.
+  * Small touches to the descriptions.
+  * Update symbols files from logs of buildds.
+  * Update lintian overrides.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 01 Apr 2018 09:10:16 +0200
+
+kio (5.44.0-1) sid; urgency=medium
+
+  * New upstream release (5.44.0).
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (5.44)
+  * Release to sid
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 21 Mar 2018 14:40:56 +0100
+
+kio (5.44.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release (5.44.0)
+  * Update symbols from build logs
+
+ -- Rik Mills <rikmills@kubuntu.org>  Mon, 12 Mar 2018 19:57:58 +0000
+
+kio (5.43.0-1) experimental; urgency=medium
+
+  * Use the salsa canonical urls
+  * New upstream release (5.43.0).
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (5.43)
+  * Drop upstream applied patch "return_on_ACCESS_DENIED"
+  * Refresh patches.
+    Refresh fix_hurd_build and drop upstream patch
+    Uri-Filter-Search-Provider-Avoid-double-delete.patch
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 26 Feb 2018 11:43:45 +0100
+
+kio (5.43.0-0ubuntu1) bionic; urgency=medium
+
+  * Drop obsolete return_on_ACCESS_DENIED patch
+  * Refresh patches
+  * Update install file
+  * Drop upstream_fix-baloo-timeline-test.patch
+  * New upstream release (5.43.0)
+  * Update symbols from build logs
+
+ -- Rik Mills <rikmills@kubuntu.org>  Sun, 11 Feb 2018 11:15:33 +0000
+
+kio (5.42.0-3) sid; urgency=medium
+
+  * New revision
+  * Release to sid
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 10 Feb 2018 11:28:57 +0100
+
+kio (5.42.0-2) experimental; urgency=medium
+
+  * New revision
+  * Add upstream patch: Uri-Filter-Search-Provider-Avoid-double-delete.patch.
+    Fixes segfault in the web shortcuts kcm (systemsettings)
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 09 Feb 2018 20:42:09 +0100
+
+kio (5.42.0-1) experimental; urgency=medium
+
+  * New upstream release (5.42.0).
+  * Add link options as-needed
+  * Bump debhelper build-dep and compat to 11.
+  * Build without build_stamp
+  * Update build-deps and deps with the info from cmake
+  * Update symbols files.
+  * Bump group breaks (5.42)
+  * Bump Standards-Version to 4.1.3.
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 02 Feb 2018 12:05:24 +0100
+
+kio (5.42.0-0ubuntu2) bionic; urgency=medium
+
+  * d/p: add upstream_fix-baloo-timeline-test.patch
+
+ -- Rik Mills <rikmills@kubuntu.org>  Thu, 08 Feb 2018 23:26:05 +0000
+
+kio (5.42.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release (5.42.0)
+  * Update symbols from build logs
+
+ -- Rik Mills <rikmills@kubuntu.org>  Fri, 26 Jan 2018 22:21:42 +0000
+
+kio (5.41.0-1) experimental; urgency=medium
+
+  * New upstream release (5.38.0).
+  * Update build-deps and deps with the info from cmake
+  * New upstream release (5.41.0).
+  * Bump Standards-Version to 4.1.2.
+  * Update build-deps and deps with the info from cmake
+  * Update symbols files
+  * Bump group breaks (5.41)
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 15 Dec 2017 10:42:46 -0300
+
+kio (5.41.0-0ubuntu1) bionic; urgency=medium
+
+  [ Rik Mills ]
+  * Update symbols after fix of incorrectly leaked private symbols
+
+  [ Walter Lapchynski ]
+  * New upstream release (5.41.0)
+  * Updated symbols from build logs. 
+
+ -- Walter Lapchynski <wxl@ubuntu.com>  Sun, 10 Dec 2017 22:05:54 -0600
+
+kio (5.40.0-0ubuntu2) bionic; urgency=medium
+
+  * Refrsh patches
+  * Disable broken KUriFilterTest, which needs fixing uptream
+
+ -- Rik Mills <rikmills@kubuntu.org>  Wed, 29 Nov 2017 19:50:51 +0000
+
+kio (5.40.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release (5.39.0)
+  * Package priority 'extra' is depreciated in favour of 'optional'
+  * New upstream release (5.40.0)
+  * Update symbols from build logs
+
+ -- Rik Mills <rikmills@kubuntu.org>  Fri, 24 Nov 2017 17:16:38 +0000
+
+kio (5.38.0-0ubuntu1) artful; urgency=medium
+
+  * New upstream release (5.38.0)
+  * Update symbols from build logs
+
+ -- Rik Mills <rikmills@kubuntu.org>  Mon, 11 Sep 2017 13:15:49 +0100
+
+kio (5.37.0-2) sid; urgency=medium
+
+  * New revision
+  * Bump Standards-Version to 4.1.0.
+  * Update upstream metadata
+  * Release to sid
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 03 Sep 2017 09:58:20 +0200
+
+kio (5.37.0-1) experimental; urgency=medium
+
+  * Use the new kdoctools dev name
+  * New upstream release (5.37.0).
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (5.37)
+  * Update symbols files.
+  * Add a libkf5kio-doc package for the qch files
+  * Bump Standards-Version to 4.0.1.
+  * Set Priority to optional
+  * Set section for the doc package
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 16 Aug 2017 10:43:29 +0200
+
+kio (5.37.0-0ubuntu1) artful; urgency=medium
+
+  * New upstream release (5.37.0)
+  * Update symbols from build logs
+
+ -- Rik Mills <rikmills@kubuntu.org>  Sat, 12 Aug 2017 18:47:48 +0100
+
+kio (5.36.0-1) experimental; urgency=medium
+
+  [ Maximiliano Curia ]
+  * New upstream release (5.35.0).
+    + Addressed an issue where certain elements in applications would become
+      inaccessible in high-dpi multi-screen setup (Closes: 864832)
+  * Bump Standards-Version to 4.0.0.
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (5.35)
+  * Drop upstream patches
+  * Refresh patches
+  * Update symbols files
+  * watch: Use https uris
+  * New upstream release (5.36.0).
+  * Bump group breaks (5.36)
+  * Update build-deps and deps with the info from cmake
+  * Drop obsolete patch
+  * Refresh patches
+
+  [ Rik Mills ]
+  * install extra kio dbus service
+
+  [ Jonathan Riddell ]
+  * add new kioslave
+  * kcontrol docs
+
+  [ Raymond Wooninck ]
+  * Add signing key
+  * also include signing-key
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 09 Jul 2017 23:42:21 +0200
+
+kio (5.36.0-0ubuntu1) artful; urgency=low
+
+  * New upstream release (5.36.0)
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Tue, 11 Jul 2017 23:52:42 +0100
+
+kio (5.35.0-0ubuntu1) artful; urgency=low
+
+  * New upstream release (5.35.0)
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Mon, 12 Jun 2017 22:57:42 +0100
+
+kio (5.34.0-0ubuntu1) artful; urgency=low
+
+  * New upstream release (5.34.0)
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Mon, 15 May 2017 21:25:39 +0100
+
+kio (5.33.0-0ubuntu1) artful; urgency=medium
+
+  [ Rik Mills ]
+  * Drop kio-sanitize-url-to-FindProxyForURL.patch - applied upstream
+  * Install additional kio dbus service. kioexecd
+
+  [ José Manuel Santamaría Lema ]
+  * New upstream release (5.33.0)
+  * Update symbols.
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Sat, 29 Apr 2017 18:04:50 +0100
+
+kio (5.31.0-0ubuntu2) zesty; urgency=medium
+
+  * SECURITY UPDATE:Information Leak when accessing https when using a
+    malicious PAC file
+      - debian/patches/kio-sanitize-url-to-FindProxyForURL.patch
+      - Thanks to Safebreach Labs researchers Safebreach Labs researchers
+        Itzik Kotler, Yonatan Fridburg and Amit Klein for reporting this
+        issue, Albert Astals Cid for fixing this issue.
+      - No CVE number.
+      - fixes (LP: #1668871)
+
+ -- Rik Mills <rikmills@kubuntu.org>  Thu, 02 Mar 2017 21:55:03 +0000
+
+kio (5.31.0-0ubuntu1) zesty; urgency=medium
+
+  [ José Manuel Santamaría Lema ]
+  * Pass '-fno-keep-inline-functions' to gcc in the acc test in order to
+    avoid possible spurious test failures.
+  * New upstream release (5.31.0)
+  * Add kubuntu_disable_failing_tests.diff
+
+  [ Rik Mills ]
+  * Update symbols from build logs.
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Tue, 14 Feb 2017 22:50:48 +0000
+
+kio (5.30.0-0ubuntu2) zesty; urgency=medium
+
+  * Add isolation-container restriction to the testsuite because there's
+    one test which needs networks access.
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Tue, 07 Feb 2017 12:45:08 +0000
+
+kio (5.30.0-0ubuntu1) zesty; urgency=medium
+
+  * Update report_error_removing_dirs patch
+  * Refresh fix_hurd_build.patch
+  * New upstream release (5.30.0)
+  * Update symbold from build logs
+
+ -- Rik Mills <rikmills@kubuntu.org>  Wed, 01 Feb 2017 18:34:30 +0000
+
+kio (5.28.0-2) unstable; urgency=medium
+
+  * Add new upstream patches, to improve file dialog's list:
+    Never-stretch-the-last-date-column-in-the-file-dialog.patch,
+    Also-change-the-resize-mode-the-other-way.patch and
+  * Add new upstream patch:
+    Allow-uppercase-checksums-matching-in-Checksums-tab.patch
+  * Add new upstream patchs to fix the way the flags are being passed:
+    ForwardingSlaveBase-fix-passing-of-Overwrite-flag-to-kio_.patch,
+    ForwardingSlaveBase-fix-passing-of-Overwrite-flag-to-kio_.patch
+  * Add new upstream patch:
+    kssl-Ensure-user-certificate-directory-has-been-created-b.patch
+  * Add new upstream patch:
+    Fix-memleak-in-KDynamicJobTracker-KWidgetJobTracker-needs.patch
+  * Add new upstream patch:
+    Fix-parsing-of-directories-listing-on-a-specific-ftp-serv.patch
+  * Add new upstream patch for CVE-2017-6410:
+    Sanitize-URLs-before-passing-them-to-FindProxyForURL.patch.
+    Thanks to Salvatore Bonaccorso for reporting (Closes: 856889)
+  * Add new upstream patch: keep-query-encoding-when-HTTP-Proxy-is-used.patch
+  * Add new upstream patch: kioexec-fix-support-for-suggestedfilename.patch
+  * Add new upstream patch, to fix the testsuite:
+    Fix-KDynamicJobTrackerTest-for-linkers-dropping-linked-li.patch
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 05 Apr 2017 10:10:59 +0200
+
+kio (5.28.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+  * Refresh patches
+
+  [ Maximiliano Curia ]
+  * New upstream release (5.28)
+  * Bump group breaks (5.28)
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 18 Nov 2016 16:05:56 +0100
+
+kio (5.28.0-0ubuntu1) zesty; urgency=medium
+
+  [ Clive Johnston ]
+  * New upstream release (5.27.0)
+
+  [ Rik Mills ]
+  * Update symbols from buildlogs
+  * Drop old kdoctools-dev build dep which is now replaced by
+    libkf5doctools-dev
+  * Install kcontrol5 docs
+
+  [ José Manuel Santamaría Lema ]
+  * Delete upstream_fix_abi_break_in_kio.diff, applied upstream.
+  * Update Vcs-Git field to use https:// instead of git://
+  * Remove dependency on kio from kio-dev, kio should contain only runtime
+    files which shouldn't be needed at build time. Also source package kinit
+    build depends on kio-dev which depended on kio which depends on kinit to fix
+    https://bugs.launchpad.net/ubuntu/+source/kio/+bug/1504526
+    so we were in a circular impossibility to build kinit.
+  * Removed patch kubuntu_failing-tests.diff which appears to be applied
+  * Refreshed symbols
+  * Merge with debian, importing the kio-dev -> libkf5kio-dev renaming, add
+    Breaks/Replaces against previous versions of kio-dev.
+  * Add lintian overrides for symbols-declares-dependency-on-other-
+    package kio
+  * Update symbols files after debian merge
+  * New upstream release (5.28.0)
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Mon, 05 Dec 2016 20:16:33 +0000
+
+kio (5.27.0-2) unstable; urgency=medium
+
+  [ Helmut Grohne ]
+  * Switch transitional kio-dev to arch:any (Closes: 841114)
+
+  [ Automatic packaging ]
+  * Update symbols files.
+
+  [ Maximiliano Curia ]
+  * Inject kio through the symbols files
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 26 Oct 2016 13:23:01 +0200
+
+kio (5.27.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+  * Refresh patches
+  * Update symbols files with the buildds logs.
+
+  [ Maximiliano Curia ]
+  * New upstream release (5.27)
+  * Bump group breaks (5.27)
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 15 Oct 2016 17:05:34 +0200
+
+kio (5.26.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+  * Refresh patches
+  * Update symbols files from buildds logs (5.25.0-1).
+
+  [ Maximiliano Curia ]
+  * Bump group breaks (5.26)
+  * Replace dbus-launch with dbus-run-session in tests
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 29 Sep 2016 12:01:35 +0200
+
+kio (5.26.0-0ubuntu2) yakkety; urgency=medium
+
+  * Add upstream_fix_abi_break_in_kio.diff to avoid ABI break. Also re-add the
+    corresponding symbols to the symbols file.
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Fri, 30 Sep 2016 08:38:54 +0200
+
+kio (5.26.0-0ubuntu1) yakkety; urgency=medium
+
+  [ Rik Mills ]
+  * Refresh patch kubuntu_failing-tests.diff
+  * New upstream release (5.26.0)
+
+  [ José Manuel Santamaría Lema ]
+  * Remove a couple of deprecated symbols.
+  * Amend symbols updating.
+
+ -- Rik Mills <rik.mills88@gmail.com>  Thu, 22 Sep 2016 13:46:14 +0100
+
+kio (5.25.0-1) unstable; urgency=medium
+
+  [ Harald Sitter ]
+  * Rename -dev package to align with the cmake package name for
+    greater discoverability and consistency across frameworks.
+    Add a transitional package to help with the name transition.
+
+  [ Automatic packaging ]
+  * Update symbols files.
+  * Update build-deps and deps with the info from cmake
+  * Refresh patches
+
+  [ Maximiliano Curia ]
+  * Bump group breaks (5.25)
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 20 Aug 2016 16:47:47 +0200
+
+kio (5.24.0-0ubuntu1) yakkety; urgency=medium
+
+  [ Philip Muškovac ]
+  * New upstream release (5.24.0)
+
+  [ Rik Mills ]
+  * Refreshed symbols from build logs
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 26 Jul 2016 08:43:07 +0000
+
+kio (5.23.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 22 Jun 2016 13:14:11 +0200
+
+kio (5.23.0-0ubuntu1) yakkety; urgency=medium
+
+  * Refreshed symbols
+  * New upstream release (5.23.0)
+
+ -- Clive Johnston <clivejo@kubuntu.org>  Mon, 11 Jul 2016 22:13:45 +0200
+
+kio (5.22.0-1) unstable; urgency=medium
+
+  [ Maximiliano Curia ]
+  * Replace the "Historical name" ddeb-migration by its "Modern, clearer"
+    replacement dbgsym-migration.
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+  * Update acc test script
+  * Update testsuite script
+  * lintian: changelog line too long
+  * uscan no longer supports more than one main upstream tarball being listed
+  * Update install files
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+  * Refresh patches
+  * Update symbols files
+  * Bump Standards-Version to 3.9.8
+  * Update build-deps and deps with the info from cmake
+  * Refresh patches
+  * Update symbols files.
+
+  [ Tobias Frost ]
+  * Add patch for hurd, the warning caused by posix_fadvise is failing the
+    build. (Closes: #799619)
+
+  [ Harald Sitter ]
+  * restore metadata from origin patch
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 24 May 2016 15:09:12 +0200
+
+kio (5.22.0-0ubuntu1) yakkety; urgency=medium
+
+  [ Scarlett Clark ]
+  * New upstream release.
+  * Bump kf5 devel dependency versions. 
+  * Debian merge: No remaining changes. 
+  * Refresh symbols. 
+  * Start over with symbols from debian, got magled somehow in move. 
+
+  [ Philip Muškovac ]
+  * Update the Vcs URLs now that the repositories are hosted on
+    Launchpad
+
+  [ Clive Johnston ]
+  * New upstream release
+  * Removing kmail files (bin and .desktop) from kio.install
+  * Removing merge markers from symbols files
+  * Refreshing symbols
+
+ -- Clive Johnston <clivejo@kubuntu.org>  Wed, 18 May 2016 12:36:26 -0700
+
+kio (5.19.0-1) experimental; urgency=medium
+
+  * New upstream release (5.19.0).
+  * Add upstream patch: upstream_autotest__fix_ctest.patch
+  * Add upstream patch: upstream_fix_wrong_path.patch
+  * Add upstream patch: upstream_kioslavetest_fix_crash.patch
+  * Add new library libkf5kiogui.
+  * Update symbols files.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 13 Feb 2016 15:16:35 +0100
+
+kio (5.19.0-0ubuntu1) UNRELEASED; urgency=medium
+
+  * Refreshing symbols
+  * Refreshing kubuntu_kdelibs4-docs-path.diff
+
+ -- Clive Johnston <clivejo@aol.com>  Thu, 25 Feb 2016 17:23:06 +0000
+
+kio (5.18.0-0ubuntu1) xenial; urgency=medium
+
+  [ Scarlett Clark ]
+  * New upstream release Xenial
+
+  [ Philip Muškovac ]
+  * New upstream release
+
+  [ Clive Johnston ]
+  * Merged with Debian
+    - Add upstream patch: upstream_autotest__fix_ctest.patch
+    - Add upstream patch: upstream_fix_wrong_path.patch
+    - Add upstream patch: upstream_kioslavetest_fix_crash.patch
+    - Add new library libkf5kiogui.
+    - Update symbols files.
+
+ -- Clive Johnston <clivejo@aol.com>  Mon, 08 Feb 2016 15:11:59 +0000
+
+kio (5.18.0-1) experimental; urgency=medium
+
+  * New upstream release (5.17.0).
+  * Update symbols files from buildds logs (5.16.0-1).
+  * New upstream release (5.18.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 27 Jan 2016 13:34:31 +0100
+
+kio (5.16.0-1) unstable; urgency=medium
+
+  * New upstream release (5.16.0).
+  * Refresh patches.
+  * Update symbols files.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 30 Nov 2015 12:12:49 +0100
+
+kio (5.15.0-1) unstable; urgency=medium
+
+  * New upstream release (5.15.0).
+  * Update symbols files from buildds logs (5.14.0-1).
+  * Refresh patches.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 09 Oct 2015 19:16:46 +0200
+
+kio (5.15.0-0ubuntu3) xenial; urgency=medium
+
+  * Fix autopackagetests by adding allow-stderr to the requirements.
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 03 Nov 2015 15:34:40 +0100
+
+kio (5.15.0-0ubuntu2) wily; urgency=medium
+
+  * KIO uses klauncher at runtime. Make package depend on kinit.
+    LP: #1504526
+
+ -- Harald Sitter <sitter@kde.org>  Fri, 09 Oct 2015 15:03:24 +0200
+
+kio (5.15.0-0ubuntu1) wily; urgency=medium
+
+  [ Scarlett Clark ]
+  * Vivid backport
+
+  [ Jonathan Riddell ]
+  * new upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 07 Oct 2015 13:50:59 +0100
+
+kio (5.14.0-1) unstable; urgency=medium
+
+  * New upstream release (5.14.0).
+  * Update install files.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 15 Sep 2015 13:49:53 +0200
+
+kio (5.14.0-0ubuntu1) wily; urgency=medium
+
+  * new upstream release
+
+ -- Clive Johnston <clivejo@aol.com>  Thu, 17 Sep 2015 13:20:41 +0100
+
+kio (5.13.0-1) unstable; urgency=medium
+
+  * New upstream release (5.13.0).
+  * Update symbols files.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 31 Aug 2015 20:14:18 +0200
+
+kio (5.13.0-0ubuntu1) wily; urgency=medium
+
+  * new upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 10 Aug 2015 13:14:20 +0200
+
+kio (5.12.0-1) unstable; urgency=medium
+
+  * New upstream release (5.12.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 09 Jul 2015 12:44:03 +0200
+
+kio (5.12.0-0ubuntu1) wily; urgency=medium
+
+  [ Scarlett Clark ]
+  * New upstream release
+  * Fix merge, remove unused broken backport.
+  * Vivid backport. 
+
+  [ José Manuel Santamaría Lema ]
+  * Update symbols file: mark as optional the symbols gone after
+    building with GCC 5
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 03 Aug 2015 14:32:13 +0200
+
+kio (5.11.0-2) unstable; urgency=medium
+
+  * Refresh patch.
+  * New patch: fix_freebsd_build.
+  * Update symbols files.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 07 Jul 2015 12:02:58 +0200
+
+kio (5.11.0-1) unstable; urgency=medium
+
+  * New upstream release (5.10.0).
+  * Update symbols files.
+  * New upstream release (5.11.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 29 Jun 2015 09:42:03 +0200
+
+kio (5.11.0-0ubuntu2) wily; urgency=medium
+
+  * Remove ktcpsockettest in kubuntu_failing-tests.diff to fix build
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 23 Jun 2015 13:14:32 +0200
+
+kio (5.11.0-0ubuntu1) wily; urgency=medium
+
+  * New upstream release, uploaded to pass failing tests
+  * Add kubuntu_build-with-kf5.10.diff
+  * Add kubuntu_failing-tests.diff to skip the remaining fails
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 22 Jun 2015 21:37:16 +0200
+
+kio (5.10.0-0ubuntu2) wily; urgency=medium
+
+  * Rebuild due to test server failures
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 22 Jun 2015 12:49:20 +0200
+
+kio (5.10.0-0ubuntu1) wily; urgency=medium
+
+  [ Maximiliano Curia ]
+  * New upstream release (5.10.0).
+  * Update symbols files.
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 03 Jun 2015 20:51:46 +0200
+
+kio (5.9.0-1) experimental; urgency=medium
+
+  * New upstream release (5.9.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 23 Apr 2015 08:26:19 +0200
+
+kio (5.9.0-0ubuntu1.1) vivid; urgency=medium
+
+  * Add upstream patch
+    upstream_Remove-bookmarks-syncing-from-KFilePlacesModel-and-u.patch
+    to remove faulty bookmarks syncing from places and use a single config for
+    places instead. LP: #1422469
+
+ -- Harald Sitter <sitter@kde.org>  Mon, 04 May 2015 10:56:34 +0200
+
+kio (5.9.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 13 Apr 2015 22:28:24 +0200
+
+kio (5.8.0-1) experimental; urgency=medium
+
+  * New upstream release (5.8.0).
+  * Update symbols files.
+  * New patch: wait_for_a_bit_longer
+  * Update copyright information.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 22 Mar 2015 11:38:41 +0100
+
+kio (5.8.0-0ubuntu2) vivid; urgency=medium
+
+  * Add kubuntu_kdelibs4-docs-path.diff to search in kdelibs4 path
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 02 Apr 2015 17:19:09 +0200
+
+kio (5.8.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 17 Mar 2015 15:38:15 +0100
+
+kio (5.8.0-1) experimental; urgency=medium
+
+  * New upstream release (5.8.0).
+  * Update symbols files.
+  * New patch: wait_for_a_bit_longer
+  * Update copyright information.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 22 Mar 2015 11:38:41 +0100
+
+kio (5.7.0-1) experimental; urgency=medium
+
+  * New upstream release (5.7.0).
+  * New patch: return_on_ACCESS_DENIED
+  * New patch: report_error_removing_dirs
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 06 Mar 2015 22:57:43 +0100
+
+kio (5.7.0-0ubuntu2) vivid; urgency=medium
+
+  * Make sure autopkgtest pulls in own binary packages as Depends
+    such that data asset lookup (e.g. protocol configs) can be
+    found more reliably
+
+ -- Harald Sitter <sitter@kde.org>  Fri, 13 Feb 2015 14:51:00 +0100
+
+kio (5.7.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Harald Sitter <sitter@kde.org>  Tue, 10 Feb 2015 16:52:44 +0100
+
+kio (5.6.0-1) experimental; urgency=medium
+
+  * Prepare initial Debian release.
+  * Add acc autopkgtests.
+  * Update build dependencies to build against experimental and to
+    follow cmake.
+  * Bump Standards-Version to 3.9.6, no changes needed.
+  * Update install files.
+  * Update watch file.
+  * Update symbols files.
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 29 Jan 2015 15:12:37 +0100
+
+kio (5.6.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 06 Jan 2015 20:13:15 +0100
+
+kio (5.5.0-0ubuntu1) vivid; urgency=medium
+
+  [ Rohan Garg ]
+  * Make sure man pages don't get installed twice
+
+  [ Scarlett Clark ]
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 15 Dec 2014 12:21:32 +0100
+
+kio (5.4.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 07 Nov 2014 15:05:22 +0100
+
+kio (5.3.0-0ubuntu1) utopic; urgency=medium
+
+  [ Jonathan Riddell ]
+  * New upstream release
+  * kio Breaks/replaces old kio-extras for moved kio-trash
+
+  [ Scarlett Clark ]
+  * Uncomment files triggered by list-missing to install file.
+  * Add new files triggered by list-missing to install file
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 07 Oct 2014 11:14:47 +0100
+
+kio (5.2.0-0ubuntu1) utopic; urgency=medium
+
+  [ Jonathan Riddell ]
+  * New upstream release
+  * Use pkg-kde-tools version 3 scripts
+
+  [ Scarlett Clark ]
+  * Patch symbols - removed 2 MISSING private symbols.
+  * Cleanup copyright + move copyright extra details to comment to silence
+    space-in-std-shortname-in-dep5-copyright lintian error.
+  * wrap-and-sort
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 22 Sep 2014 19:45:56 +0200
+
+kio (5.1.0a-0ubuntu1) utopic; urgency=medium
+
+  [ Rohan Garg ]
+  * Make sure we add the XS-Testsuite field to debian/control
+
+  [ José Manuel Santamaría Lema ]
+  * Mark a couple of private symbols as optional in
+    libkf5kiowidgets5.symbols.
+  * Update libraries *.install paths so a soname bump doesn't go
+    unnoticed.
+
+  [ Scarlett Clark ]
+  * New upstream release
+  * Remove upstream_kurlrequester-dialog-accept-handling.diff applied upstream.
+  * New upstream tar due to regressions.
+  * Patch symbols using batchpatch.
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Tue, 05 Aug 2014 17:15:17 +0200
+
+kio (5.0.0a-0ubuntu1) utopic; urgency=medium
+
+  * Initial stable upstream release
+
+  [ José Manuel Santamaría Lema ]
+  * Mark a couple of private symbols as optional in libkf5kiowidgets5.symbols
+    and clean up missing symbols from previous versions.
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Tue, 15 Jul 2014 16:11:35 +0200

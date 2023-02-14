@@ -1,0 +1,5 @@
+add_subdirectory(webshortcuts)
+add_subdirectory(cookies)
+add_subdirectory(smb)
+add_subdirectory(proxy)
+add_subdirectory(netpref)

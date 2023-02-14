@@ -1,0 +1,31 @@
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Thu, 31 Mar 2016 15:38:43 +0200
+Subject: fix_kfreebsd_build
+
+===================================================================
+---
+ src/widgets/kpropertiesdialog.cpp | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+--- a/src/widgets/kpropertiesdialog.cpp
++++ b/src/widgets/kpropertiesdialog.cpp
+@@ -121,6 +121,10 @@
+ #if HAVE_POSIX_ACL
+ extern "C" {
+ #include <sys/xattr.h>
++#  if defined(Q_OS_FREEBSD) || defined(__FreeBSD_kernel__)
++#     include <sys/vfs.h>
++#     include <sys/mount.h>
++#  endif
+ }
+ #include "kacleditwidget.h"
+ #endif
+@@ -1945,7 +1949,7 @@ KFilePermissionsPropsPlugin::KFilePermis
+ static bool fileSystemSupportsACL(const QByteArray &path)
+ {
+     bool fileSystemSupportsACLs = false;
+-#ifdef Q_OS_FREEBSD
++#if defined(Q_OS_FREEBSD) || defined(__FreeBSD_kernel__)
+     struct statfs buf;
+     fileSystemSupportsACLs = (statfs(path.data(), &buf) == 0) && (buf.f_flags & MNT_ACLS);
+ #elif defined Q_OS_MACOS

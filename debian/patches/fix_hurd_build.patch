@@ -1,0 +1,45 @@
+From: Tobias Frost <tobi@debian.org>
+Date: Thu, 22 Feb 2018 12:23:56 +0100
+Subject: fix_hurd_build
+
+posix_fadvise64 is not available on hurd, will yield to an compiler warning and
+aborting the build through --fatal-warnings
+
+Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=799619
+Forwarded: no
+---
+ src/ioslaves/file/file.cpp      | 2 +-
+ src/ioslaves/file/file_unix.cpp | 4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+--- a/src/ioslaves/file/file.cpp
++++ b/src/ioslaves/file/file.cpp
+@@ -303,7 +303,7 @@
+         }
+     }
+ 
+-#if HAVE_FADVISE
++#if HAVE_FADVISE && !defined(__GNU__)
+     // TODO check return code
+     posix_fadvise(f.handle(), 0, 0, POSIX_FADV_SEQUENTIAL);
+ #endif
+--- a/src/ioslaves/file/file_unix.cpp
++++ b/src/ioslaves/file/file_unix.cpp
+@@ -745,7 +745,7 @@
+         }
+     }
+ 
+-#if HAVE_FADVISE
++#if HAVE_FADVISE && !defined(__GNU__)
+     posix_fadvise(srcFile.handle(), 0, 0, POSIX_FADV_SEQUENTIAL);
+ #endif
+ 
+@@ -780,7 +780,7 @@
+         }
+     }
+ 
+-#if HAVE_FADVISE
++#if HAVE_FADVISE && !defined(__GNU__)
+     posix_fadvise(destFile.handle(), 0, 0, POSIX_FADV_SEQUENTIAL);
+ #endif
+ 
