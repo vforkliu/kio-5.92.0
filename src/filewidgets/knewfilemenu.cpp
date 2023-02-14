@@ -602,21 +602,30 @@ void KNewFileMenuPrivate::executeSymLink(const KNewFileMenuSingleton::Entry &ent
 
 void KNewFileMenuPrivate::executeStrategy()
 {
+    qInfo() << "KNewFileMenuPrivate::executeStrategy enter ...";
     m_tempFileToDelete = m_copyData.tempFileToDelete();
     const QString src = m_copyData.sourceFileToCopy();
     QString chosenFileName = expandTilde(m_copyData.chosenFileName(), true);
+
+    qInfo() << "m_tempFileToDelete: " << m_tempFileToDelete;
+    qInfo() << "src: " << src;
+    qInfo() << "chosenFileName: " << chosenFileName;
 
     if (src.isEmpty()) {
         return;
     }
     QUrl uSrc(QUrl::fromLocalFile(src));
+    qInfo() << "uSrc:" << uSrc;
 
     // In case the templates/.source directory contains symlinks, resolve
     // them to the target files. Fixes bug #149628.
     KFileItem item(uSrc, QString(), KFileItem::Unknown);
     if (item.isLink()) {
+        qInfo() << "linkDest:" << item.linkDest();
         uSrc.setPath(item.linkDest());
     }
+
+    qInfo() << "m_copyData.m_isSymlink:" << m_copyData.m_isSymlink;
 
     if (!m_copyData.m_isSymlink) {
         // If the file is not going to be detected as a desktop file, due to a
@@ -626,7 +635,7 @@ void KNewFileMenuPrivate::executeStrategy()
             QMimeDatabase db;
             QMimeType wantedMime = db.mimeTypeForUrl(uSrc);
             QMimeType mime = db.mimeTypeForFileNameAndData(m_copyData.m_chosenFileName, srcFile.read(1024));
-            // qDebug() << "mime=" << mime->name() << "wantedMime=" << wantedMime->name();
+            qInfo() << "mime=" << mime.name() << "wantedMime=" << wantedMime.name();
             if (!mime.inherits(wantedMime.name())) {
                 if (!wantedMime.preferredSuffix().isEmpty()) {
                     chosenFileName += QLatin1Char('.') + wantedMime.preferredSuffix();
@@ -639,11 +648,13 @@ void KNewFileMenuPrivate::executeStrategy()
     for (const auto &u : std::as_const(m_popupFiles)) {
         QUrl dest = u;
         dest.setPath(concatPaths(dest.path(), KIO::encodeFileName(chosenFileName)));
+        qInfo() << "dest:" << dest;
 
         QList<QUrl> lstSrc;
         lstSrc.append(uSrc);
         KIO::Job *kjob;
         if (m_copyData.m_isSymlink) {
+            qInfo() << "KIO::linkAs(" << uSrc << "," << dest << ")";
             KIO::CopyJob *linkJob = KIO::linkAs(uSrc, dest);
             kjob = linkJob;
             KIO::FileUndoManager::self()->recordCopyJob(linkJob);
@@ -653,12 +664,13 @@ void KNewFileMenuPrivate::executeStrategy()
                 return;
             }
             // The QFile won't live long enough for the job, so let's buffer the contents
+            qInfo() << "KIO::storedPut(" << dest << ")";
             const QByteArray srcBuf(srcFile.readAll());
             KIO::StoredTransferJob *putJob = KIO::storedPut(srcBuf, dest, -1);
             kjob = putJob;
             KIO::FileUndoManager::self()->recordJob(KIO::FileUndoManager::Put, QList<QUrl>(), dest, putJob);
         } else {
-            // qDebug() << "KIO::copyAs(" << uSrc.url() << "," << dest.url() << ")";
+            qInfo() << "KIO::copyAs(" << uSrc.url() << "," << dest.url() << ")";
             KIO::CopyJob *job = KIO::copyAs(uSrc, dest);
             job->setDefaultPermissions(true);
             kjob = job;
@@ -667,6 +679,8 @@ void KNewFileMenuPrivate::executeStrategy()
         KJobWidgets::setWindow(kjob, m_parentWidget);
         QObject::connect(kjob, &KJob::result, q, &KNewFileMenu::slotResult);
     }
+
+    qInfo() << "KNewFileMenuPrivate::executeStrategy leave.";
 }
 
 void KNewFileMenuPrivate::executeUrlDesktopFile(const KNewFileMenuSingleton::Entry &entry)
@@ -854,9 +868,11 @@ void KNewFileMenuPrivate::slotAbortDialog()
 
 void KNewFileMenuPrivate::slotActionTriggered(QAction *action)
 {
+    qInfo() << "KNewFileMenuPrivate::slotActionTriggered enter ...";
     q->trigger(); // was for kdesktop's slotNewMenuActivated() in kde3 times. Can't hurt to keep it...
 
     if (action == m_newDirAction) {
+        qInfo() << "createDirectory ...";
         q->createDirectory();
         return;
     }
@@ -867,6 +883,7 @@ void KNewFileMenuPrivate::slotActionTriggered(QAction *action)
     const KNewFileMenuSingleton::Entry entry = s->templatesList->at(id - 1);
 
     const bool createSymlink = entry.templatePath == QLatin1String("__CREATE_SYMLINK__");
+    qInfo() << "createSymlink:" << createSymlink;
 
     m_copyData = KNewFileMenuCopyData();
 
@@ -874,15 +891,20 @@ void KNewFileMenuPrivate::slotActionTriggered(QAction *action)
         m_copyData.m_isSymlink = true;
         executeSymLink(entry);
     } else if (KDesktopFile::isDesktopFile(entry.templatePath)) {
+        qInfo() << "entry.templatePath:" << entry.templatePath;
         KDesktopFile df(entry.templatePath);
         if (df.readType() == QLatin1String("Link")) {
+            qInfo() << "executeUrlDesktopFile ...";
             executeUrlDesktopFile(entry);
         } else { // any other desktop file (Device, App, etc.)
             executeOtherDesktopFile(entry);
         }
     } else {
+        qInfo() << "executeRealFileOrDir ...";
         executeRealFileOrDir(entry);
     }
+
+    qInfo() << "KNewFileMenuPrivate::slotActionTriggered leave.";
 }
 
 void KNewFileMenuPrivate::slotCreateDirectory()
