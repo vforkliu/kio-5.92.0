@@ -26,3 +26,7 @@ CMakeLists.txt.user*
 .idea
 /cmake-build*
 .cache
+obj-x86_64-linux-gnu/
+debian/*.log
+Testing/
+debian/.debhelper/
